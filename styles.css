@@ -1,0 +1,71 @@
+Basic Styling
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff5722;
+    transform: scale(1.1);
+}
+
+/* Active Scroll Effect */
+.navbar.scrolled {
+    background-color: #222;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+section {
+    height: 100vh;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+}
+
+section h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #666;
+}
